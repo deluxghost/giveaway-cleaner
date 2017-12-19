@@ -300,3 +300,30 @@ ins.adsbygoogle {
 	display: none !important;
 }
 }
+
+@-moz-document domain("prys.ga") {
+#header-image {
+	display: none !important;
+}
+}
+
+@-moz-document domain("getkeys.net") {
+canvas[class^="particles-js-canvas-el"] {
+	display: none !important;
+}
+
+.tabsindex_animation {
+    animation: none !important;
+}
+}
+
+@-moz-document regexp("^https?://freetrial.ubisoft.com/promotions/.*$") {
+body {
+    background-color: #1C2127 !important;
+    background-image: none !important;
+}
+
+.ratings {
+    display: none !important;
+}
+}
