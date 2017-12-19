@@ -6,7 +6,7 @@
 // @homepage      https://userstyles.org/styles/146723
 // @include       *
 // @run-at        document-start
-// @version       0.20171106093257
+// @version       0.20171219041855
 // ==/UserScript==
 (function() {var css = "";
 if (false || (document.domain == "embloo.net" || document.domain.substring(document.domain.indexOf(".embloo.net") + 1) == "embloo.net"))
@@ -310,6 +310,33 @@ if (false || (new RegExp("^https?://simplo\\.gg/index\\.php\\?giveaway=.*$")).te
 		"",
 		"ins.adsbygoogle {",
 		"	display: none !important;",
+		"}"
+	].join("\n");
+if (false || (document.domain == "prys.ga" || document.domain.substring(document.domain.indexOf(".prys.ga") + 1) == "prys.ga"))
+	css += [
+		"#header-image {",
+		"	display: none !important;",
+		"}"
+	].join("\n");
+if (false || (document.domain == "getkeys.net" || document.domain.substring(document.domain.indexOf(".getkeys.net") + 1) == "getkeys.net"))
+	css += [
+		"canvas[class^=\"particles-js-canvas-el\"] {",
+		"	display: none !important;",
+		"}",
+		"",
+		".tabsindex_animation {",
+		"    animation: none !important;",
+		"}"
+	].join("\n");
+if (false || (new RegExp("^https?://freetrial.ubisoft.com/promotions/.*$")).test(document.location.href))
+	css += [
+		"body {",
+		"    background-color: #1C2127 !important;",
+		"    background-image: none !important;",
+		"}",
+		"",
+		".ratings {",
+		"    display: none !important;",
 		"}"
 	].join("\n");
 if (typeof GM_addStyle != "undefined") {
