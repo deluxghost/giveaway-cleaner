@@ -6,7 +6,7 @@
 // @homepage      https://userstyles.org/styles/146723
 // @include       *
 // @run-at        document-start
-// @version       0.20171219041855
+// @version       0.20180223104926
 // ==/UserScript==
 (function() {var css = "";
 if (false || (document.domain == "embloo.net" || document.domain.substring(document.domain.indexOf(".embloo.net") + 1) == "embloo.net"))
@@ -22,6 +22,10 @@ if (false || (document.domain == "embloo.net" || document.domain.substring(docum
 		"",
 		".content {",
 		"	background-image: none !important;",
+		"}",
+		"",
+		".space {",
+		"	display: none !important;",
 		"}"
 	].join("\n");
 if (false || (document.domain == "chubbykeys.com" || document.domain.substring(document.domain.indexOf(".chubbykeys.com") + 1) == "chubbykeys.com"))
@@ -43,12 +47,6 @@ if (false || (document.domain == "chubbykeys.com" || document.domain.substring(d
 		".hvr-grow-rotate:active {",
 		"    -webkit-transform: none !important;",
 		"    transform: none !important;",
-		"}"
-	].join("\n");
-if (false || (document.domain == "giftybundle.com" || document.domain.substring(document.domain.indexOf(".giftybundle.com") + 1) == "giftybundle.com"))
-	css += [
-		"body {",
-		"    background: #313131 !important;",
 		"}"
 	].join("\n");
 if (false || (document.domain == "giveawayhopper.com" || document.domain.substring(document.domain.indexOf(".giveawayhopper.com") + 1) == "giveawayhopper.com"))
@@ -108,6 +106,10 @@ if (false || (document.domain == "marvelousga.com" || document.domain.substring(
 		".hvr-grow-rotate:active {",
 		"    -webkit-transform: none !important;",
 		"    transform: none !important;",
+		"}",
+		"",
+		".text-center.footertxt img {",
+		"	display: none !important;",
 		"}"
 	].join("\n");
 if (false || (document.domain == "indiegala.com" || document.domain.substring(document.domain.indexOf(".indiegala.com") + 1) == "indiegala.com"))
@@ -294,6 +296,10 @@ if (false || (document.domain == "dupedornot.com" || document.domain.substring(d
 		".btn:hover, .btn:focus",
 		"button:hover, button:focus {",
 		"    color: #999 !important;",
+		"}",
+		"",
+		".text-center.footertxt img {",
+		"	display: none !important;",
 		"}"
 	].join("\n");
 if (false || (document.domain == "giveaway.su" || document.domain.substring(document.domain.indexOf(".giveaway.su") + 1) == "giveaway.su"))
@@ -302,33 +308,13 @@ if (false || (document.domain == "giveaway.su" || document.domain.substring(docu
 		"	background: #246 !important;",
 		"}"
 	].join("\n");
-if (false || (new RegExp("^https?://simplo\\.gg/index\\.php\\?giveaway=.*$")).test(document.location.href))
-	css += [
-		"div#body {",
-		"	background: #bbb !important;",
-		"}",
-		"",
-		"ins.adsbygoogle {",
-		"	display: none !important;",
-		"}"
-	].join("\n");
 if (false || (document.domain == "prys.ga" || document.domain.substring(document.domain.indexOf(".prys.ga") + 1) == "prys.ga"))
 	css += [
 		"#header-image {",
 		"	display: none !important;",
 		"}"
 	].join("\n");
-if (false || (document.domain == "getkeys.net" || document.domain.substring(document.domain.indexOf(".getkeys.net") + 1) == "getkeys.net"))
-	css += [
-		"canvas[class^=\"particles-js-canvas-el\"] {",
-		"	display: none !important;",
-		"}",
-		"",
-		".tabsindex_animation {",
-		"    animation: none !important;",
-		"}"
-	].join("\n");
-if (false || (new RegExp("^https?://freetrial.ubisoft.com/promotions/.*$")).test(document.location.href))
+if (false || (new RegExp("^https?://free(trial)?.ubisoft.com/promotions/.*$")).test(document.location.href))
 	css += [
 		"body {",
 		"    background-color: #1C2127 !important;",
@@ -337,6 +323,25 @@ if (false || (new RegExp("^https?://freetrial.ubisoft.com/promotions/.*$")).test
 		"",
 		".ratings {",
 		"    display: none !important;",
+		"}"
+	].join("\n");
+if (false || (document.domain == "bananagiveaway.com" || document.domain.substring(document.domain.indexOf(".bananagiveaway.com") + 1) == "bananagiveaway.com"))
+	css += [
+		"body {",
+		"    background-color: #153c38 !important;",
+		"	background-image: none !important;",
+		"}",
+		"",
+		".character-left, .character-right {",
+		"	display: none !important;",
+		"}",
+		"",
+		"#giveaway .giveaway .head a {",
+		"	visibility: hidden !important;",
+		"}",
+		"",
+		"#onesignal-bell-container {",
+		"	display: none !important;",
 		"}"
 	].join("\n");
 if (typeof GM_addStyle != "undefined") {
