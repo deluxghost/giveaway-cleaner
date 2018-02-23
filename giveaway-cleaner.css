@@ -11,6 +11,10 @@ input#_regBtn{
 .content {
 	background-image: none !important;
 }
+
+.space {
+	display: none !important;
+}
 }
 
 @-moz-document domain("chubbykeys.com") {
@@ -31,12 +35,6 @@ h5.text-center img {
 .hvr-grow-rotate:active {
     -webkit-transform: none !important;
     transform: none !important;
-}
-}
-
-@-moz-document domain("giftybundle.com") {
-body {
-    background: #313131 !important;
 }
 }
 
@@ -96,6 +94,10 @@ a.dmca-badge {
 .hvr-grow-rotate:active {
     -webkit-transform: none !important;
     transform: none !important;
+}
+
+.text-center.footertxt img {
+	display: none !important;
 }
 }
 
@@ -283,21 +285,15 @@ li.active-page a {
 button:hover, button:focus {
     color: #999 !important;
 }
+
+.text-center.footertxt img {
+	display: none !important;
+}
 }
 
 @-moz-document domain("giveaway.su") {
 div.wrapper-outer {
 	background: #246 !important;
-}
-}
-
-@-moz-document regexp("^https?://simplo\\.gg/index\\.php\\?giveaway=.*$") {
-div#body {
-	background: #bbb !important;
-}
-
-ins.adsbygoogle {
-	display: none !important;
 }
 }
 
@@ -307,17 +303,7 @@ ins.adsbygoogle {
 }
 }
 
-@-moz-document domain("getkeys.net") {
-canvas[class^="particles-js-canvas-el"] {
-	display: none !important;
-}
-
-.tabsindex_animation {
-    animation: none !important;
-}
-}
-
-@-moz-document regexp("^https?://freetrial.ubisoft.com/promotions/.*$") {
+@-moz-document regexp("^https?://free(trial)?.ubisoft.com/promotions/.*$") {
 body {
     background-color: #1C2127 !important;
     background-image: none !important;
@@ -325,5 +311,24 @@ body {
 
 .ratings {
     display: none !important;
+}
+}
+
+@-moz-document domain("bananagiveaway.com") {
+body {
+    background-color: #153c38 !important;
+	background-image: none !important;
+}
+
+.character-left, .character-right {
+	display: none !important;
+}
+
+#giveaway .giveaway .head a {
+	visibility: hidden !important;
+}
+
+#onesignal-bell-container {
+	display: none !important;
 }
 }
